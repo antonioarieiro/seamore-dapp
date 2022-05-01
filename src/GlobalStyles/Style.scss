@@ -1,0 +1,241 @@
+.extension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  width: 340px;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-top: 17px;
+  width: 30px;
+  height: 30px;
+}
+
+.hi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+
+  img {
+    height: 9px;
+    margin-left: 8px;
+  }
+}
+
+.connect {
+  margin-top: 7px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+}
+
+.metamask-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.metamask {
+  width: 110px;
+  height: 110px;
+  margin-top: 16px;
+  z-index: 2;
+}
+
+.line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(269.98deg, #5022D5 14.42%, #960418 110.89%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.not-logged {
+  width: 50%;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 24px;
+}
+
+.connect-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background: #5022D5;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: white;
+  margin-top: 32px;
+  cursor: pointer;
+
+  &:hover {
+    background: #310B9F;
+  }
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 39px;
+  width: 100%;
+  background: #2E2F33;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: lowercase;
+  margin-top: 20px;
+
+  span {
+    margin-left: 16px
+  }
+
+  img {
+    margin-right: 16px
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  width: 340px;
+}
+
+.panel__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 34px);
+  height: 100%;
+  margin-top: 21px;
+}
+
+.panel__column {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 34px);
+  margin-top: 21px;
+}
+
+.panel__line {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(269.98deg, #5022D5 14.42%, #960418 110.89%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  margin-top: 17px;
+}
+
+.panel__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  color: #FFFFFF;
+
+  span {
+    margin-top: 9px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 6px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.panel__toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.panel__toggle__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px 0px 0px 0px;
+  cursor: pointer;
+
+  &--active {
+    color: white;
+    background-color: #5022D5;
+  }
+}
+
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 24px;
+  background: #2E2F33;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked+label {
+  background: linear-gradient(87.39deg, #772446 -50.17%, #011AFF 198.03%);
+}
+
+input:checked+label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 18px;
+}

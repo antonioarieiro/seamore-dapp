@@ -1,0 +1,80 @@
+.nft-list-navbar {
+  background: #262338;
+
+  .options {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    color: #6E7191;
+  }
+
+  .seamore {
+    padding: 8px 12px;
+    background: #EFF0F6;
+    border-radius: 2px 0px 0px 2px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #4E4B66;
+  }
+
+  .traits {
+    padding: 8px 12px;
+    background: #4E4B66;
+    border-radius: 0px 2px 2px 0px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #A0A3BD;
+  }
+
+  .vertical-line {
+    border: solid 1px;
+    height: 70px;
+  }
+
+  .gas-information {
+
+    p {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #F7F7FC;
+    }
+
+    span {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: #6E7191;
+
+    }
+
+  }
+  .explore {
+    p {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+     
+      color: #F7F7FC;
+    }
+  }
+  .account {
+    background: #14142B;
+border-radius: 2px;
+  }
+}
