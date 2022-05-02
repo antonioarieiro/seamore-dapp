@@ -1,3 +1,7 @@
+body {
+  position: static;
+}
+
 .nft-list-navbar {
   background: #262338;
 
@@ -62,6 +66,7 @@
     }
 
   }
+
   .explore {
     p {
       font-family: 'Manrope';
@@ -69,12 +74,90 @@
       font-weight: 700;
       font-size: 15px;
       line-height: 24px;
-     
+
       color: #F7F7FC;
     }
   }
+
   .account {
     background: #14142B;
-border-radius: 2px;
+    border-radius: 2px;
+  }
+
+}
+
+.infos {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FCFCFC;
+
+  #collections {
+    background: -webkit-linear-gradient(#B5175A -25.1%, #7221A4 110.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A0A3BD;
+  }
+
+  .search-bar {
+    height: 56px;
+    background: #4E4B66;
+    border: 1px solid #4E4B66;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 384px;
+
+    input {
+      border: none;
+      background: transparent;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #6E7191;
+
+    }
+
+  }
+
+}
+
+.nft-table-header {
+
+  background: #262338;
+  border-radius: 2px;
+  height: 56px;
+  .head-items {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: #F7F7FC;
+  }
+}
+
+.table-items {
+  background: #262338;
+  border-radius: 2px;
+  margin-left: 120px;
+  margin-right: 120px;
+  .tools {
+    span {
+      margin:4px;
+    }
   }
 }

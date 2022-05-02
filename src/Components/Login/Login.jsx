@@ -4,84 +4,42 @@ import Logo from '../../assets/logo.png';
 import Hand from '../../assets/hand.svg';
 import Discord from '../../assets/discord.svg';
 import '../../GlobalStyles/Style.scss';
-import { ethers } from "ethers";
+import { useMetaMask } from "metamask-react";
 
 
 export default function Login() {
- // usetstate for storing and retrieving wallet details
- const [data, setdata] = useState({
-  address: "",
-  Balance: null,
-});
+  const { status, connect, account, chainId, ethereum } = useMetaMask();
+ 
 
-// Button handler button for handling a
-// request event for metamask
-const btnhandler = () => {
-
-  // Asking if metamask is already present or not
-  if (window.ethereum) {
-console.log(window.ethereum)
-    // res[0] for fetching a first wallet
-    window.ethereum
-      .request({ method: "eth_requestAccounts" })
-      .then((res) => console.log(res) );
-  } else {
-    alert("install metamask extension!!");
-  }
-};
-
-// getbalance function for getting a balance in
-// a right format with help of ethers
-const getbalance = (address) => {
-
-  // Requesting balance method
-  window.ethereum
-    .request({ 
-      method: "eth_getBalance", 
-      params: [address, "latest"] 
-    })
-    .then((balance) => {
-      // Setting balance
-      setdata({
-        Balance: ethers.utils.formatEther(balance),
-      });
-    });
-};
-
-// Function for getting handling all events
-const accountChangeHandler = (account) => {
-  // Setting an address data
-  setdata({
-    address: account,
-  });
-
-  // Setting a balance
-  getbalance(account);
-};
-
-return (
-<>
-<div className="App">
-    {/* Calling all values which we 
-     have stored in usestate */}
-
-    <div className="text-center">
-      <div>
-        <strong>Address: </strong>
-        {data.address}
-      </div>
-      <div>
-        <div>
-          <strong>Balance: </strong>
-          {data.Balance}
+  return (
+    <>
+     <div className='extension'>
+        <img src={Logo} className='logo' alt='logo' />
+        <div className='hi'>
+          HI <img src={Hand} alt='hand' />
         </div>
-        <button onClick={btnhandler} variant="primary">
-          Connect to wallet
-        </button>
+        <div className='connect'>
+          CONNECT YOUR METAMASK WALLET!
+        </div>
+        <div className='metamask-logo'>
+          <div className='line' />
+          <img src={Metamask} className='metamask' alt='metamask' />
+        </div>
+        <div className='not-logged'>
+          You're not logged in, click the button bellow.
+        </div>
+        <div className='connect-button' >
+          {
+          status === 'notConnected'
+          ?  <h1 onClick={connect}>Connect to MetaMask</h1>
+          :''
+          }
+        </div>
+        <div className='footer' >
+          <span>seamore</span>
+          <img src={Discord} alt='discord' />
+        </div>
       </div>
-    </div>
-  </div>
-</>
-);
-
-    }
+    </>
+  )
+}
