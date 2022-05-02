@@ -4,11 +4,11 @@ import './style.scss';
 export default function NftListHeader() {
   return (
     <>
-     <div className="nft-list-navbar h-[74px] w-full mt-12 flex items-center">
-         <div className="flex justify-start ml-[111px] mr-[64px]">
+     <div className="nft-list-navbar h-[74px] w-full mt-12 flex items-center justify-around">
+         <div className="flex ml-[] mr-[64px]">
          <img src={Logo} alt="Logo" className="w-[34px] h-[34px]" />
          </div>
-          <div className="options flex items-center justify-around">
+          <div className="options flex items-center">
             <p>
               Rarity Option:
             </p>

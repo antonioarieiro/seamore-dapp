@@ -10,14 +10,14 @@ export default function NftList() {
       <div className="absolute bg-[#14142B] w-full h-full">
         <Header />
         <NftListHeader />
-        <div className="text-white mt-12 ml-[60px] infos flex w-full ">
+        <div className="text-white mt-12 infos flex w-full ">
           <Search />
         </div>
-        <div className="text-white mt-[120px] nft-table-header flex xl:mr-[95px] ml-[120px] w-auto">
+        <div className="text-white mt-[120px] flex  w-full ">
           <NftListTable />
 
         </div>
-        <div className="flex flex-col table-items text-white mt-[16px] absolute items-center ">
+        <div className="flex flex-col table-items text-white mt-[10px]  items-center ">
           <div className="flex collection items-center">
             <img src="" alt="img" className="w-[64px] h-[64px] mr-[16px] ml-[24px]" />
             <div className="flex flex-col">

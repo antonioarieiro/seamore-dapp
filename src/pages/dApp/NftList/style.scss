@@ -136,9 +136,6 @@ body {
 
 .nft-table-header {
 
-  background: #262338;
-  border-radius: 2px;
-  height: 56px;
   .head-items {
     font-family: 'Manrope';
     font-style: normal;
@@ -148,16 +145,24 @@ body {
     text-align: center;
     color: #F7F7FC;
   }
+  .collections {
+    border-collapse: collapse;
+  }
+  table {
+    th {
+      font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+display:flex;
+flex-direction: row;
+
+color: #F7F7FC;
+    }
+  }
 }
 
 .table-items {
-  background: #262338;
-  border-radius: 2px;
-  margin-left: 120px;
-  margin-right: 120px;
-  .tools {
-    span {
-      margin:4px;
-    }
-  }
+ 
 }
