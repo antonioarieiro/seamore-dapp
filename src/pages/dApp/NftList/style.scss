@@ -15,6 +15,8 @@ body {
   }
 
   .seamore {
+    width: 89px;
+    height: 40px;
     padding: 8px 12px;
     background: #EFF0F6;
     border-radius: 2px 0px 0px 2px;
@@ -27,6 +29,8 @@ body {
   }
 
   .traits {
+    width: 114px;
+    height: 40px;
     padding: 8px 12px;
     background: #4E4B66;
     border-radius: 0px 2px 2px 0px;
@@ -135,6 +139,8 @@ body {
 }
 
 .nft-table-header {
+  background: #262338;
+  border-radius: 2px;
 
   .head-items {
     font-family: 'Manrope';
@@ -145,24 +151,75 @@ body {
     text-align: center;
     color: #F7F7FC;
   }
+
+  svg {
+    cursor: pointer;
+    &:hover {
+      width:10px;
+      height: 10px ;
+    }
+  }
+
   .collections {
     border-collapse: collapse;
   }
+
   table {
+    border-radius: 2px;
+
     th {
       font-family: 'Manrope';
-font-style: normal;
-font-weight: 700;
-font-size: 13px;
-line-height: 24px;
-display:flex;
-flex-direction: row;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 24px;
+      display: flex;
+      text-align: center;
 
-color: #F7F7FC;
+      color: #F7F7FC;
     }
   }
 }
 
-.table-items {
- 
+.nft-table-body {
+  background: #262338;
+  border-radius: 2px;
+
+  th {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+
+    color: #F7F7FC;
+  }
+
+  .down {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #D03025;
+
+  }
+}
+
+.filter-time {
+  border-radius: 2px;
+
+  .filter-selected {
+    background: linear-gradient(90deg, #A71A6B -56.82%, #7B209B 100%);
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px;
+  }
+}
+
+.min-w-1920 {
+
+  min-width: 1200px !important;
+  display: inline; zoom: 1;
 }
