@@ -87,6 +87,28 @@ body {
     background: #14142B;
     border-radius: 2px;
   }
+  
+  .connect-wallet {
+    background: #4E4B66;
+border-radius: 2px;
+height: 56px;
+p {
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+color: #F7F7FC;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 12px;
+
+}
+  }
 
 }
 
@@ -219,7 +241,15 @@ body {
 }
 
 .min-w-1920 {
-
   min-width: 1200px !important;
   display: inline; zoom: 1;
+}
+
+.main {
+  opacity: 98%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(4px);
 }

@@ -26,7 +26,7 @@ export default function NftFilterbyTime() {
   }
   return (
     <>
-      <div className="mr-5 px-1 flex filter-time mt-[14px] bg-[#262338] h-[56px] items-center cursor-pointer">
+      <div className="mr-10 px-1 flex filter-time mt-[14px] bg-[#262338] h-[56px] items-center cursor-pointer">
         <p className="ml-[23px] mr-4">
           Time:
         </p>

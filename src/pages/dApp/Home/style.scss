@@ -1,3 +1,8 @@
+.modal {
+  border:solid 0.1px transparent;
+  border-radius: 4px;
+}
+
 .right {
   background: conic-gradient(from 112.52deg at 50% 50%, #6D23A7 0deg, #901EA3 98.05deg, #9F2082 253.66deg, #C4215C 360deg);
 
@@ -23,6 +28,8 @@
     }
   }
 }
+
+
 
 .account {
   left: 0px;
