@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="absolute flex flex-row border w-full h-full">
-        <div className="right w-1/2 flex flex-col items-center h-full border justify-end">
+        <div className="right w-1/2 flex flex-col items-center h-full  justify-end">
 
           <div className="message text-center flex items-center">
             <p>

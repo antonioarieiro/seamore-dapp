@@ -1,14 +1,12 @@
 .right {
   background: conic-gradient(from 112.52deg at 50% 50%, #6D23A7 0deg, #901EA3 98.05deg, #9F2082 253.66deg, #C4215C 360deg);
 
-  opacity: 0.4;
-
   .message {
     height: 96px;
     left: 23px;
     top: 511px;
     background: linear-gradient(112.48deg, rgba(255, 255, 255, 0.4) -0.18%, rgba(255, 255, 255, 0.1) 80.3%);
-    opacity: 0.4;
+ 
     box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(40px);
     border-radius: 2px;
