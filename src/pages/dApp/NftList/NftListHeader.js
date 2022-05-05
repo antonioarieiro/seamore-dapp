@@ -1,14 +1,17 @@
 import React from 'react';
 import Logo from '../../../assets/logo.png';
+import Metamask from '../../../assets/metamask.png';
+import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 import './style.scss';
 export default function NftListHeader() {
+  const {  setOpenModal, openModal } = React.useContext(SeamoreContext)
   return (
     <>
-     <div className="nft-list-navbar h-[74px] w-full mt-12 flex items-center justify-around">
+     <div className="nft-list-navbar h-[74px] w-full mt-12 flex items-center justify-around min-w-1920 ">
          <div className="flex ml-[] mr-[64px]">
          <img src={Logo} alt="Logo" className="w-[34px] h-[34px]" />
          </div>
-          <div className="options flex items-center">
+          <div className="options flex items-center ">
             <p>
               Rarity Option:
             </p>
@@ -43,7 +46,24 @@ export default function NftListHeader() {
                   Calendar
                 </p>
               </div>
-              <div className="account flex ml-12 py-4 px-8 items-center">
+             <div
+             onClick={() => {setOpenModal(!openModal)}}
+             className="connect-wallet flex items-center w-[212px] justify-center ml-[72px] cursor-pointer hover:border hover:border-blue-500 hover:border-2"
+             >
+               <img src={Metamask} alt="connect" className="w-[24px] h-[24px] mr-3"/>
+               <p className="hover:border-blue-500 hover:border-b hover:boder-2 cursor-pointer">Connect Wallet</p>
+             </div>
+              
+            </div>
+            
+          </div>
+        </div>
+    </>
+  )
+}
+
+/*
+ <div className="account flex ml-12 py-4 px-8 items-center">
                 <p className="mr-8 truncate w-36">
                   Welcome 02a...2837
                 </p>
@@ -53,11 +73,4 @@ export default function NftListHeader() {
                   </svg>
                 </span>
               </div>
-              
-            </div>
-            
-          </div>
-        </div>
-    </>
-  )
-}
+*/

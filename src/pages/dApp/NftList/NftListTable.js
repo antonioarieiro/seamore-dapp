@@ -7,7 +7,7 @@ export default function NftListTable() {
     <div className="flex justify-end">
         <NftFilterbyTime/>
         </div>
-      <div class=" shadow-md nft-table-header items-center ml-5 mr-5">
+      <div class=" shadow-md nft-table-header items-center ml-10 mr-10">
         
         <table className="flex items-center">
           <thread className="h-[56px] flex items-center">

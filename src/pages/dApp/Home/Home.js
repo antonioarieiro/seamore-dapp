@@ -1,14 +1,23 @@
 import React from 'react';
 import Logo from '../../../assets/logo.png';
 import MetaMask from '../../../assets/metamask.png';
+import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 import { useMetaMask } from "metamask-react";
+import Icon from '@material-tailwind/react/Icon';
 import './style.scss';
 
 export default function Home() {
   const { connect } = useMetaMask();
+  const { openModal } = React.useContext(SeamoreContext);
   return (
     <>
-      <div className="absolute flex flex-row border w-full h-full">
+     
+        <div
+        className={openModal ? "absolute flex flex-row w-4/5 h-4/5 justify-center z-50 md:ml-32 md:mt-16 modal" : 'hidden'}
+        >
+          <button className="absolute text-white w-full items-end justify-end flex mr-16 mt-5 cursor-pointer exit">
+          <Icon name='close' size='4xl' color='white' />
+          </button>
         <div className="right w-1/2 flex flex-col items-center h-full  justify-end">
 
           <div className="message text-center flex items-center">
@@ -18,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center account w-1/2">
-          <div className="flex  justify-center h-full items-center">
+          <div className="flex   h-full items-center mt-[137px]">
             <img src={Logo} alt="" className="w-[48px] h-[48px]" />
           </div>
           <div className="default-dapp items-center flex flex-col">
@@ -29,13 +38,13 @@ export default function Home() {
               Connect your wallet to see nft's data on the seamore
             </span>
           </div>
-          <div className="flex w-full mt-20">
+          <div className="flex w-full mt-10">
             <div className="meta-mask-content cursor-pointer w-full ml-20 mr-20 items-center flex align-baseline justify-center">
               <img src={MetaMask} alt="" className="w-[24px] h-[24px] mr-4" />
               <p onClick={connect}>Connect Metamask Wallet</p>
             </div>
           </div>
-          <div className="mt-20 flex flex-col">
+          <div className="mt-10 flex flex-col">
             <span className="text-[#A0A3BD]">
               Don’t have the token?
             </span>
@@ -66,6 +75,7 @@ export default function Home() {
         </div>
       </div>
 
+ 
     </>
   )
 }
