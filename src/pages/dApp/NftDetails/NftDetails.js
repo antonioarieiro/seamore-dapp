@@ -36,116 +36,80 @@ export default function NftDetails() {
                 </svg>
               </span>
             </div>
-
           </div>
           <div className="border border-blue h-[80px] w-[1px]" />
-          <table class=" text-sm text-left items-center flex-col">
-            
-            <thead class="text-xs  uppercase text-white">
+          <table className="">
+            <thead className=" uppercase text-white">
               <tr>
-                <th scope="col" class="px-6">
+                <th scope="col" className="px-6">
                   ITENS
                 </th>
-                <th scope="col" class="px-6">
+                <th scope="col" className="px-6">
                   FLOOR
                 </th>
-                <th scope="col" class="px-6">
+                <th scope="col" className="px-6">
                   ROYALTES
                 </th>
-                <th scope="col" class="px-6">
+                <th scope="col" className="px-6">
                   VOL 24H
                 </th>
-                <th scope="col" class="px-6">
+                <th scope="col" className="px-6">
                   VOL 7D
                 </th>
               </tr>
             </thead>
-            <tbody class="">
-              <tr class="">
-                <th scope="row" class="px-6  font-medium  whitespace-nowrap text-white">
+            <tbody className="">
+              <tr className="">
+                <th scope="row" className="px-6  font-medium  whitespace-nowrap text-white">
                   10K
                 </th>
-                <td class="px-6  flex items-center">
-                  <div className="flex items-center  w-full">
-                    <span className="flex flex-col mt-7 items-center ">
-                      <svg class="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <th className="flex items-center text-center px-6 text-white">
+                  <span className="flex flex-col items-center mr-1 ">
+                    <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                    </svg>
+                    <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                    </svg>
+                    <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                  145
+                </th>
+                <th className="text-white px-6">
+                  7,5
+                </th>
+                <th className="flex items-center text-center px-6 text-white">
+                  <span className="flex flex-col items-center mr-1 ">
+                    <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                    </svg>
+                    <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                    </svg>
+                    <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                    </svg>
+                  </span>
+                  1.581k
+                </th>
+                <th className="items-center text-center px-6 text-white">
+                  <div className="flex items-center">
+                    <span className="flex flex-col items-center mr-1 ">
+                      <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
                       </svg>
-                      <svg class="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
                       </svg>
                       <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
                       </svg>
                     </span>
-                    <span className="text-white flex-col mt-7 items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
-                      140
-                    </span>
+                    12.9k
                   </div>
-                </td>
-                <td class="px-6  text-white">
-                  7,5%
-                </td>
-                <td class="px-6  flex items-center align-baseline">
-                  <div className="flex items-center w-full flex-col">
-                    <div class="flex">
-                      <span className="flex flex-col items-center ">
-                        <svg class="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
-                        </svg>
-                        <svg class="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
-                        </svg>
-                        <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
-                        </svg>
-                      </span>
-                      <span className="text-white flex-col items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
-                        140
-                      </span>
-                    </div>
-                    <span className="flex items-center">
-                      <span className="mr-1 pt-2">
-                        <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6.5 0.5C6.5 0.223857 6.27614 -3.80725e-07 6 -1.69991e-07L1.5 -1.06771e-07C1.22386 -2.75358e-07 1 0.223857 1 0.5C1 0.776142 1.22386 1 1.5 1L5.5 1L5.5 5C5.5 5.27614 5.72386 5.5 6 5.5C6.27614 5.5 6.5 5.27614 6.5 5L6.5 0.5ZM1.35355 5.85355L6.35355 0.853553L5.64645 0.146446L0.646447 5.14645L1.35355 5.85355Z" fill="#4DBC19" />
-                        </svg>
-                      </span>
-                      <span className="text-green-600 pt-2">
-                        12,02%
-                      </span>
-                    </span>
-                  </div>
-                </td>
-                <td class="px-6  text-right">
-                  <div className="flex items-center w-full flex-col">
-                    <div class="flex items-center">
-                      <span className="flex flex-col items-center mt-6">
-                        <svg class="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
-                        </svg>
-                        <svg class="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
-                        </svg>
-                        <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
-                        </svg>
-                      </span>
-                      <span className="text-white flex-col mt-6 items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
-                        140
-                      </span>
-                    </div>
-                    <span className="flex items-center">
-                      <span className="mr-1 pt-3">
-                        <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M6 6C6.27614 6 6.5 5.77614 6.5 5.5L6.5 1C6.5 0.723858 6.27614 0.5 6 0.5C5.72386 0.5 5.5 0.723858 5.5 1L5.5 5L1.5 5C1.22386 5 1 5.22386 1 5.5C1 5.77614 1.22386 6 1.5 6L6 6ZM0.646447 0.853553L5.64645 5.85355L6.35355 5.14645L1.35355 0.146447L0.646447 0.853553Z" fill="#D03025" />
-                        </svg>
-                      </span>
-                      <span className="text-red-600 pt-3">
-                        12,02%
-                      </span>
-                    </span>
-                  </div>
-                </td>
+                </th>
               </tr>
             </tbody>
           </table>

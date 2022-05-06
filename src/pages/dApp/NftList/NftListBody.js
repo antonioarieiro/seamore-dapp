@@ -7,16 +7,16 @@ export default function NftListBody() {
  <div className="flex justify-end">
         <NftFilterbyTime/>
         </div>
-      <div class="relative overflow-x-auto shadow-md ">
-        <table class="w-full text-sm text-left text-gray-500">
-          <thead class="text-xs uppercase">
-            <tr class=" nft-table-body">
-              <th scope="col" class="px-6 py-3 flex items-center cursor-pointer">
+      <div className="relative overflow-x-auto shadow-md ">
+        <table className="w-full text-sm text-left text-gray-500">
+          <thead className="text-xs uppercase">
+            <tr className=" nft-table-body">
+              <th scope="col" className="px-6 py-3 flex items-center cursor-pointer">
                 <span className="hover:border-b-2 border-blue-600">
                 COLLECTION
                 </span>
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
                 <div className="flex items-center">
                 <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                 FLOOR PRICE
@@ -32,7 +32,7 @@ export default function NftListBody() {
                 </span>
                 </div>
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
               <div className="flex items-center">
               <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                 SUPPLY
@@ -48,7 +48,7 @@ export default function NftListBody() {
                 </span>
                 </div>
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
               <div className="flex items-center">
               <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                 PRICE
@@ -64,7 +64,7 @@ export default function NftListBody() {
                 </span>
                 </div>
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
               <div className="flex items-center">
               <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                 SALES
@@ -80,7 +80,7 @@ export default function NftListBody() {
                 </span>
                 </div>
               </th>
-              <th scope="col" class="px-6 py-3">
+              <th scope="col" className="px-6 py-3">
               <div className="flex items-center">
               <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                 ROYALTY
@@ -98,10 +98,10 @@ export default function NftListBody() {
               </th>
             </tr>
           </thead>
-          <div class="mb-[16px]"></div>
-          <tbody class="nft-table-body">
-            <tr class=" border-b border-gray-600">
-              <th scope="row" class="px-6 py-4 font-medium text-gray-900 ">
+          <div className="mb-[16px]"></div>
+          <tbody className="nft-table-body">
+            <tr className=" border-b border-gray-600">
+              <th scope="row" className="px-6 py-4 font-medium text-gray-900 ">
               <div className="flex">
               <img src="https://brasilnft.art.br/pytsycky/2021/12/Bored-Ape-Erro-PNG-696x696.png" alt="img" className=" hover:border-4 border-blue-500 w-[45px] h-[45px] rounded-full" />
               <div className="flex flex-col ml-5">
@@ -130,13 +130,13 @@ export default function NftListBody() {
               </div>
             </div>
               </th>
-              <td class="px-6 py-4">
+              <td className="px-6 py-4">
                 <div className="flex items-center w-full justify-start">
                   <span className="flex flex-col items-center ">
-                    <svg class="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
                     </svg>
-                    <svg class="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
                     </svg>
                     <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,18 +154,18 @@ export default function NftListBody() {
                   <span className="ml-2 down">28,07%</span>
                 </span>
               </td>
-              <td class="px-6 py-4">
+              <td className="px-6 py-4">
               <span className="hover:border-b-2 border-blue-500 cursor-default">
                  10.000
                 </span>
               </td>
-              <td class="px-6 py-4">
+              <td className="px-6 py-4">
                 <div className="flex items-center w-full justify-start">
                   <span className="flex flex-col items-center">
-                    <svg class="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
                     </svg>
-                    <svg class="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
                     </svg>
                     <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -183,13 +183,13 @@ export default function NftListBody() {
                   <span className="ml-2 down hover:border-b-2 border-blue-500 cursor-default">1,29%</span>
                 </span>
               </td>
-              <td class="px-6 py-4">
+              <td className="px-6 py-4">
                 <span className="hover:border-b-2 border-blue-500 cursor-default">
                   29.201
                 </span>
             
               </td>
-              <td class="px-6 py-4">
+              <td className="px-6 py-4">
               <span className="hover:border-b-2 border-blue-500 cursor-default">
                   29.201
                 </span>

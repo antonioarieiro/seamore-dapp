@@ -1,15 +1,12 @@
 import React from 'react';
-import Modal from '../Home/Home';
 import NftListBody from './NftListBody';
 import Search from './SearchBar';
-import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
+// import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 import './style.scss';
 export default function NftList() {
- const { openModal } = React.useContext(SeamoreContext);
   return (
     <>
-    <Modal />
-      <div className={openModal ? "absolute bg-[#14142B] w-full h-full min-w-1920 main": "absolute bg-[#14142B] w-full h-full min-w-1920"}
+        <div className={ "absolute bg-[#14142B] w-full h-full min-w-1920"}
       >
         <div className="text-white mt-12 infos">
           <Search />

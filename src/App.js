@@ -1,26 +1,37 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { dApp } from './pages/dApp/index';
 import Header from './Components/Header';
 import NftListHeader from './pages/dApp/NftList/NftListHeader';
+import Modal from './pages/dApp/Home/Home';
+import { SeamoreProvider } from './SeamoreContext/SeamoreProvider';
+import { SeamoreContext } from './SeamoreContext/SeamoreContext';
 import './index.css';
 import "@material-tailwind/react/tailwind.css";
-import { SeamoreProvider } from './SeamoreContext/SeamoreProvider';
-function App() {
+function Main() {
+  const { openModal } = React.useContext(SeamoreContext);
   return (
     <>
+      <Modal />
+      <div className={openModal ? "min-w-1920 absolute w-full h-full overflow-hidden main" : "min-w-1920 absolute w-full h-full overflow-hidden "}>
+        <Header />
+        <NftListHeader />
+        <Routes>
+          <Route exact path="/" element={<dApp.NftList />} />
+          <Route exact path="/nft/:id" element={<dApp.NftDetails />} />
+        </Routes>
 
-      <div className="min-w-1920 absolute w-full h-full overflow-hidden">
-        <SeamoreProvider>
-          <Header />
-          <NftListHeader />
-          <Routes>
-            <Route exact path="/" element={<dApp.NftList />} />
-            <Route exact path="/nft/:id" element={<dApp.NftDetails />} />
-          </Routes>
-        </SeamoreProvider>
       </div>
     </>
   );
+}
+
+function App() {
+  return (
+    <SeamoreProvider>
+      <Main />
+    </SeamoreProvider>
+  )
 }
 
 export default App;

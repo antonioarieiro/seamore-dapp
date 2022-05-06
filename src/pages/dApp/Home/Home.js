@@ -11,15 +11,14 @@ export default function Home() {
   const { openModal, setOpenModal } = React.useContext(SeamoreContext);
   return (
     <>
-     
         <div
         className={openModal ? "absolute flex flex-row w-4/5 h-4/5 justify-center z-50 md:ml-32 md:mt-16 modal" : 'hidden'}
         >
-          <button
+          <p
           onClick={() => {setOpenModal(!openModal)}}
           className="absolute text-white w-full items-end justify-end flex mr-16 mt-5 cursor-pointer exit">
           <Icon name='close' size='4xl' color='white' />
-          </button>
+          </p>
         <div className="right w-1/2 flex flex-col items-center h-full  justify-end">
 
           <div className="message text-center flex items-center">
@@ -29,7 +28,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col items-center account w-1/2">
-          <div className="flex   h-full items-center mt-[137px]">
+          <div className="flex   h-full items-center mt-[120px]">
             <img src={Logo} alt="" className="w-[48px] h-[48px]" />
           </div>
           <div className="default-dapp items-center flex flex-col">
