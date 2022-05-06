@@ -6,27 +6,27 @@ export default function NftFilterbyTime() {
     const value = e.target.id;
     switch (value) {
       case '1M':
-        setFilterSelected('1M')
+        setFilterSelected('1M');
         break;
       case '15M':
-        setFilterSelected('15M')
+        setFilterSelected('15M');
         break;
       case '30M':
-        setFilterSelected('30M')
+        setFilterSelected('30M');
         break;
       case '1H':
-        setFilterSelected('1H')
+        setFilterSelected('1H');
         break;
       case '1D':
-        setFilterSelected('1D')
+        setFilterSelected('1D');
         break;
       default:
-        setFilterSelected('1M')
+        setFilterSelected('1M');
     }
   }
   return (
     <>
-      <div className="mr-10 px-1 flex filter-time mt-[14px] bg-[#262338] h-[56px] items-center cursor-pointer">
+      <div className=" px-1 flex filter-time mt-[14px] bg-[#262338] h-[56px] items-center cursor-pointer">
         <p className="ml-[23px] mr-4">
           Time:
         </p>

@@ -10,3 +10,10 @@
   -ms-filter: blur(10px);
   filter: blur(4px);
 }
+
+.min-w-1920 {
+  background: #14142B;
+  min-width: 1200px !important;
+  display: inline;
+  zoom: 1;
+}

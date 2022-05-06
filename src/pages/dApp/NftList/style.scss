@@ -87,27 +87,28 @@ body {
     background: #14142B;
     border-radius: 2px;
   }
-  
+
   .connect-wallet {
     background: #4E4B66;
-border-radius: 2px;
-height: 56px;
-p {
+    border-radius: 2px;
+    height: 56px;
 
-font-family: 'Manrope';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 24px;
+    p {
 
-color: #F7F7FC;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
 
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 12px;
+      color: #F7F7FC;
 
-}
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 12px;
+
+    }
   }
 
 }
@@ -176,9 +177,10 @@ margin: 0px 12px;
 
   svg {
     cursor: pointer;
+
     &:hover {
-      width:10px;
-      height: 10px ;
+      width: 10px;
+      height: 10px;
     }
   }
 
@@ -207,12 +209,18 @@ margin: 0px 12px;
   background: #262338;
   border-radius: 2px;
 
-  th {
+  th,
+  td {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 24px;
+    /* identical to box height, or 185% */
+
+
+
+    /* Grayscale/200 */
 
     color: #F7F7FC;
   }
@@ -230,8 +238,6 @@ margin: 0px 12px;
 }
 
 .filter-time {
-  border-radius: 2px;
-
   .filter-selected {
     background: linear-gradient(90deg, #A71A6B -56.82%, #7B209B 100%);
     border-radius: 2px;
@@ -241,8 +247,10 @@ margin: 0px 12px;
 }
 
 .min-w-1920 {
+  background: #262338;
   min-width: 1200px !important;
-  display: inline; zoom: 1;
+  display: inline;
+  zoom: 1;
 }
 
 .main {
@@ -252,4 +260,61 @@ margin: 0px 12px;
   -o-filter: blur(10px);
   -ms-filter: blur(10px);
   filter: blur(4px);
+}
+
+.selected-nft {
+  height: 120px;
+  background: #262338;
+  border-radius: 2px;
+  .name-and-owner {
+    p {
+
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #F7F7FC;
+    }
+
+    span {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #6E7191;
+    }
+  }
+
+
+  .metrics {
+   p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+
+    color: #6E7191;
+
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+   } 
+   span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F7F7FC;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+   }
+  }
 }
