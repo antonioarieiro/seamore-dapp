@@ -18,7 +18,7 @@ function Main() {
         <NftListHeader />
         <Routes>
           <Route exact path="/" element={<dApp.NftList />} />
-          <Route exact path="/nft/:id" element={<dApp.NftDetails />} />
+          <Route exact path="/collection/:id" element={<dApp.NftDetails />} />
         </Routes>
 
       </div>

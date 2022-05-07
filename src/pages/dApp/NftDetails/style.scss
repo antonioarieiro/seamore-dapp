@@ -1,0 +1,77 @@
+.details {
+  .header-table {
+    th {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 24px;
+      /* identical to box height, or 185% */
+
+
+      /* Grayscale/600 */
+
+      color: #6E7191;
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+ 
+    }
+  }
+
+  .body-table {
+    th {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #F7F7FC;
+      order: 1;
+      flex-grow: 0;
+  
+    }
+  }
+
+  p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F7F7FC;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .vol-24 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #4DBC19;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+  }
+
+  .vol-7 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #4DBC19;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+  }
+}
