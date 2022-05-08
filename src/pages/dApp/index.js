@@ -1,10 +1,10 @@
 
 import Home from './Home/Home';
 import NftList from './NftList/NftList';
-import NftDetails from './NftDetails/NftDetails';
+import CollectionDetails from './CollectionDetails/CollectionDetails';
 
 export const dApp = {
   Home,
   NftList,
-  NftDetails,
+  CollectionDetails,
 }

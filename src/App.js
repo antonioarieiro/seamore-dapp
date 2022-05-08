@@ -13,12 +13,17 @@ function Main() {
   return (
     <>
       <Modal />
-      <div className={openModal ? "min-w-1920 absolute w-full h-full overflow-hidden main" : "min-w-1920 absolute w-full h-full overflow-hidden "}>
+      <div className="absolute h-full  z-50 justify-end flex w-full">
+      <div className="bg-[#262338] w-[496px] fixed h-full \-">
+dale
+      </div>
+        </div>
+      <div className={openModal ? "min-w-1920 absolute w-full h-full overflow-hidden main" : "min-w-1920 absolute w-full h-full overflow-hidden overflow-y-auto"}>
         <Header />
         <NftListHeader />
         <Routes>
           <Route exact path="/" element={<dApp.NftList />} />
-          <Route exact path="/collection/:id" element={<dApp.NftDetails />} />
+          <Route exact path="/collection/:id" element={<dApp.CollectionDetails />} />
         </Routes>
 
       </div>
