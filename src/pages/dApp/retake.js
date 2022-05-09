@@ -100,7 +100,7 @@ export default function CollectionDetails() {
               </div>
             </div>
 
-            <div className="ml-[32px]  listing w-4/12 flex flex-col">
+            <div className="ml-[32px]  listing 2xl:w-4/12 flex flex-col">
               <div className="flex justify-between items-center w-full bg-[#262338] h-[56px]">
                 <p className="ml-[24px]">Listing</p>
                 <div className="order-filters flex items-center">
@@ -108,7 +108,7 @@ export default function CollectionDetails() {
                   <p>Profit</p>
                   <span className="ml-[25px] mr-[25px]">
                     <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#F7F7FC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#F7F7FC" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
 
                   </span>
@@ -125,13 +125,13 @@ export default function CollectionDetails() {
                     <div className="flex items-center justify-end">
                       <span className="flex flex-col items-center">
                         <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                       </span>
                       <p className="flex-col items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
@@ -144,13 +144,13 @@ export default function CollectionDetails() {
                     <div className="flex items-center justify-end">
                       <span className="flex flex-col items-center">
                         <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                       </span>
                       <p className="flex-col items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">

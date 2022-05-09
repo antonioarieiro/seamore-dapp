@@ -3,6 +3,7 @@ import { SeamoreContext } from './SeamoreContext';
 export const SeamoreProvider = ({ children }) => {
   const [setConnectMetamaskAccount] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+  const [openTraits, setOpenTraits] = useState(false);
   const [nftInfo, setNftInfo] = useState([]);
 
   const INITIAL = [
@@ -34,7 +35,9 @@ export const SeamoreProvider = ({ children }) => {
         openModal,
         setOpenModal,
         getDataByCollection,
-        nftInfo
+        nftInfo,
+        openTraits,
+        setOpenTraits
       }}
     >
       {children}

@@ -40,9 +40,9 @@ export default function Home() {
             </span>
           </div>
           <div className="flex w-full mt-10">
-            <div className="meta-mask-content cursor-pointer w-full ml-20 mr-20 items-center flex align-baseline justify-center">
+            <div className="meta-mask-content cursor-pointer w-full ml-20 mr-20 items-center flex align-baseline justify-center hover:border-2 border-blue-500">
               <img src={MetaMask} alt="" className="w-[24px] h-[24px] mr-4" />
-              <p onClick={connect}>Connect Metamask Wallet</p>
+              <p onClick={() => connect}>Connect Metamask Wallet</p>
             </div>
           </div>
           <div className="mt-10 flex flex-col">

@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { dApp } from './pages/dApp/index';
 import Header from './Components/Header';
 import NftListHeader from './pages/dApp/NftList/NftListHeader';
+import TraitFilters from './Components/TraitFilters';
 import Modal from './pages/dApp/Home/Home';
 import { SeamoreProvider } from './SeamoreContext/SeamoreProvider';
 import { SeamoreContext } from './SeamoreContext/SeamoreContext';
@@ -13,11 +14,7 @@ function Main() {
   return (
     <>
       <Modal />
-      <div className="absolute h-full  z-50 justify-end flex w-full">
-      <div className="bg-[#262338] w-[496px] fixed h-full \-">
-dale
-      </div>
-        </div>
+    <TraitFilters/>
       <div className={openModal ? "min-w-1920 absolute w-full h-full overflow-hidden main" : "min-w-1920 absolute w-full h-full overflow-hidden overflow-y-auto"}>
         <Header />
         <NftListHeader />

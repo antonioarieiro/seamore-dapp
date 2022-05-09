@@ -80,13 +80,13 @@ export default function SelectedNftInfos() {
                 <div className="flex items-center">
                 <span className="flex flex-col items-center mr-1 ">
                     <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                      <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                     </svg>
                     <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                      <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                     </svg>
                     <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                      <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                     </svg>
                   </span>
                   <span>
@@ -104,13 +104,13 @@ export default function SelectedNftInfos() {
                     <div className="flex items-center">
                       <span className="flex flex-col items-center mr-1 ">
                         <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                       </span>
                       <p className="hover:border-b-2 border-blue-500">
@@ -134,13 +134,13 @@ export default function SelectedNftInfos() {
                     <div className="flex items-center">
                       <span className="flex flex-col items-center mr-1 ">
                         <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                         <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                          <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                         </svg>
                       </span>
                       <p className="hover:border-b-2 border-blue-500">

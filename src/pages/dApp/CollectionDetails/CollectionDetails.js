@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import SelectedNftInfo from './SelectedNftInfo';
+import { ScatterChart } from 'react-chartkick';
+import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 
-import { ScatterChart } from 'react-chartkick'
 import 'chartkick/chart.js'
 
 import './style.scss';
@@ -10,6 +11,9 @@ export default function CollectionDetails() {
   const [time, setTime] = useState('24H');
   const [floor, setFloor] = useState('24H');
   const [traitTime, setTraitTime] = useState('24H');
+
+  const { openTraits, setOpenTraits } = React.useContext(SeamoreContext);
+
   const filterOptions = [
     '24H',
     '7D',
@@ -74,13 +78,16 @@ export default function CollectionDetails() {
                 </span>
               </p>
             </div>
-            <div className="traits flex items-center justify-center mr-[78px]">
+            <div
+            className="traits flex items-center justify-center mr-[78px] cursor-pointer hover:border-2 border-blue-500"
+            onClick={() => {setOpenTraits(!openTraits)}}
+            >
               <span className="mr-[16px]">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.250056 1.61C2.27006 4.2 6.00006 9 6.00006 9V15C6.00006 15.55 6.45006 16 7.00006 16H9.00006C9.55006 16 10.0001 15.55 10.0001 15V9C10.0001 9 13.7201 4.2 15.7401 1.61C15.8547 1.46237 15.9255 1.28553 15.9445 1.09961C15.9636 0.913684 15.93 0.726154 15.8477 0.558371C15.7654 0.390588 15.6376 0.249293 15.4789 0.150577C15.3202 0.0518598 15.137 -0.000312035 14.9501 1.40404e-06H1.04006C0.210056 1.40404e-06 -0.259944 0.950002 0.250056 1.61Z" fill="#F7F7FC" />
                 </svg>
               </span>
-              <p>
+              <p className="hover:border-b-2 border-blue-500">
                 Trait Filters
               </p>
             </div>
@@ -139,14 +146,14 @@ export default function CollectionDetails() {
                 </div>
               </div>
               <div className="flex">
-                <div class="flex  w-full">
-                  <table class="w-full text-left  traits-table">
-                    <thead class=" uppercase bg-[#262338] h-[56px] header-table-traits">
+                <div className="flex  w-full">
+                  <table className="w-full text-left  traits-table">
+                    <thead className=" uppercase bg-[#262338] h-[56px] header-table-traits">
                       <tr>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                           TRAIT NAME
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                           <div className="flex items-center">
                             <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                               %
@@ -162,7 +169,7 @@ export default function CollectionDetails() {
                             </span>
                           </div>
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                           <div className="flex items-center">
                             <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                               AVG LAST SALES
@@ -178,7 +185,7 @@ export default function CollectionDetails() {
                             </span>
                           </div>
                         </th>
-                        <th scope="col" class="px-6 py-3">
+                        <th scope="col" className="px-6 py-3">
                           <div className="flex items-center">
                             <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                               FLOOR PRICE
@@ -194,7 +201,7 @@ export default function CollectionDetails() {
                             </span>
                           </div>
                         </th>
-                        <th scope="col" class="px-6  py-3">
+                        <th scope="col" className="px-6  py-3">
                           <div className="flex items-center">
                             <span className="hover:border-b-2 border-blue-600 cursor-pointer">
                               DIFF
@@ -214,103 +221,103 @@ export default function CollectionDetails() {
                     </thead>
                     <div className="mt-4"></div>
                     <tbody className="bg-[#262338] body-table-traits">
-                      <tr class="border-b border-gray-700">
-                        <th scope="row" class="px-6 py-5">
+                      <tr className="border-b border-gray-700">
+                        <th scope="row" className="px-6 py-5">
                           <span className="text-[#8775D0]">
                             FUR
                           </span>
                           : CROSS
                         </th>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           1,49%
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           192.4
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           $169.69
                         </td>
-                        <td class="px-6 py-5 text-left">
+                        <td className="px-6 py-5 text-left">
                           11,66%
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-700">
-                        <th scope="row" class="px-6 py-5">
+                      <tr className="border-b border-gray-700">
+                        <th scope="row" className="px-6 py-5">
                           <span className="text-[#8775D0]">
                             FUR
                           </span>
                           : CROSS
                         </th>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           1,49%
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           192.4
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           $169.69
                         </td>
-                        <td class="px-6 py-5 text-left">
+                        <td className="px-6 py-5 text-left">
                           11,66%
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-700">
-                        <th scope="row" class="px-6 py-5">
+                      <tr className="border-b border-gray-700">
+                        <th scope="row" className="px-6 py-5">
                           <span className="text-[#8775D0]">
                             FUR
                           </span>
                           : CROSS
                         </th>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           1,49%
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           192.4
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           $169.69
                         </td>
-                        <td class="px-6 py-5 text-left">
+                        <td className="px-6 py-5 text-left">
                           11,66%
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-700">
-                        <th scope="row" class="px-6 py-5">
+                      <tr className="border-b border-gray-700">
+                        <th scope="row" className="px-6 py-5">
                           <span className="text-[#8775D0]">
                             FUR
                           </span>
                           : CROSS
                         </th>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           1,49%
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           192.4
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           $169.69
                         </td>
-                        <td class="px-6 py-5 text-left">
+                        <td className="px-6 py-5 text-left">
                           11,66%
                         </td>
                       </tr>
-                      <tr class="border-b border-gray-700">
-                        <th scope="row" class="px-6 py-5">
+                      <tr className="border-b border-gray-700">
+                        <th scope="row" className="px-6 py-5">
                           <span className="text-[#8775D0]">
                             FUR
                           </span>
                           : CROSS
                         </th>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           1,49%
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           192.4
                         </td>
-                        <td class="px-6 py-5">
+                        <td className="px-6 py-5">
                           $169.69
                         </td>
-                        <td class="px-6 py-5 text-left">
+                        <td className="px-6 py-5 text-left">
                           11,66%
                         </td>
                       </tr>
@@ -348,7 +355,7 @@ export default function CollectionDetails() {
                     <p>Profit</p>
                     <span className="ml-[25px] mr-[25px]">
                       <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#F7F7FC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#F7F7FC" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
 
                     </span>
@@ -365,13 +372,13 @@ export default function CollectionDetails() {
                       <div className="flex items-center justify-end">
                         <span className="flex flex-col items-center">
                           <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                            <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                           </svg>
                           <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                            <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                           </svg>
                           <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                            <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                           </svg>
                         </span>
                         <p className="flex-col items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
@@ -384,13 +391,13 @@ export default function CollectionDetails() {
                       <div className="flex items-center justify-end">
                         <span className="flex flex-col items-center">
                           <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                            <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                           </svg>
                           <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                            <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                           </svg>
                           <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                            <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                           </svg>
                         </span>
                         <p className="flex-col items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
@@ -414,7 +421,7 @@ export default function CollectionDetails() {
                       <p>Price min to max</p>
                       <span className="ml-[25px] mr-[25px]">
                         <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#F7F7FC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#F7F7FC" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
 
                       </span>
@@ -435,13 +442,13 @@ export default function CollectionDetails() {
                           <div className="flex items-center justify-end">
                             <span className="flex flex-col items-center">
                               <svg className="mb-1" width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                                <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                               </svg>
                               <svg className="mb-1" width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 1H10" stroke="#FCFCFC" stroke-width="1.5" />
+                                <path d="M0 1H10" stroke="#FCFCFC" strokeWidth="1.5" />
                               </svg>
                               <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 1H12" stroke="#FCFCFC" stroke-width="1.5" />
+                                <path d="M0 1H12" stroke="#FCFCFC" strokeWidth="1.5" />
                               </svg>
                             </span>
                             <p className="flex-col items-center ml-1 hover:border-b-2 border-blue-500 cursor-default">
@@ -490,7 +497,7 @@ export default function CollectionDetails() {
                           <div className="flex items-center p-2 mr-[24px] ml-[12px]  verify-hyped">
                             <span className="m-[10px]">
                               <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.25 1.5L10.125 8.625L6.375 4.875L0.75 10.5" stroke="#4DBC19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.25 1.5L10.125 8.625L6.375 4.875L0.75 10.5" stroke="#4DBC19" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                               </svg>
 
                             </span>
