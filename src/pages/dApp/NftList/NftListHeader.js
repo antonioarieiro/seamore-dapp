@@ -11,7 +11,7 @@ return (
       <div className="flex justify-between mr-8 ml-8 w-full items-center">
         <div className="flex mr-[64px] items-center">
           <img src={Logo} alt="Logo" className="w-[34px] h-[34px]" />
-          <div className="flex options items-center ml-[64px]">
+          <div className="flex options items-center ml-[111px]">
             <p className="w-[95px]">
             Rarity Option:
           </p>
