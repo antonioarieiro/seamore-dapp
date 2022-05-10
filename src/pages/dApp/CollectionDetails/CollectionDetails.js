@@ -4,47 +4,37 @@ import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 import BreakMaxSize from './BreakProint1920';
 import SmallSize from './SmallSize';
 import 'chartkick/chart.js'
-
 import './style.scss';
+
+
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+}
+
+
 export default function CollectionDetails() {
   const { openTraits, setOpenTraits } = React.useContext(SeamoreContext);
   const [content, setContent] = useState('overview');
-  const [render, setRender] = useState(5);
+
+  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+
+
   useEffect(() => {
-    const getScreen = document.documentElement.clientWidth;
-    if (getScreen > 1900) {
-      setRender(1920);
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
     }
-    if (getScreen < 1900) {
-      setRender(1200)
-    }
-  },[render])
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
 
 
-  const filterOptions = [
-    '24H',
-    '7D',
-    '30D',
-    '90D',
-    '6M',
-    'ALL'
-  ]
-  const traits_time = [
-    '1M',
-    '5M',
-    '15M',
-    '30M',
-    '1H',
-    '1D'
-  ]
-  const floor_price = [
-    '24H',
-    '7D',
-    '30D',
-    '90D',
-    '6M',
-    'ALL'
-  ]
+
+  },[windowDimensions, setWindowDimensions, getWindowDimensions])
+
   return (
     <>
  
@@ -110,7 +100,7 @@ export default function CollectionDetails() {
             No trait filters added
           </div>
           {
-            render === '1920'
+            windowDimensions.width > 1910
             ? <BreakMaxSize/>
             : <SmallSize/>
           }

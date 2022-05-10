@@ -29,8 +29,6 @@ export default function SmallSize() {
     '7D',
     '30D',
     '90D',
-    '6M',
-    'ALL'
   ]
   return (
     <>
@@ -175,12 +173,311 @@ export default function SmallSize() {
                 </div>
               </div>
             </div>
-            <div className="w-full flex justify-between items-center">
-              <div className="border">
-                uma
+            <div className="mt-[64px] w-full flex justify-between">
+              <div className="w-7/12 flex flex-col items-center">
+                <div className="w-full  flex justify-between items-center">
+                  <div>
+                    <p>
+                      Overvalued Traits
+                    </p>
+                  </div>
+                  <div className="h-[56px] bg-[#262338] flex items-center">
+                    <span className="ml-4">
+                      Time:
+                    </span>
+                    <div className="mr-4">
+                      {traits_time.map(val => (<span key={val} onClick={() => { setTraitTime(val) }} className={traitTime === val ? 'filter-trade-options ml-[28px] p-[6px] bg-[#4E4B66] cursor-pointer' : 'cursor-pointer filter-trade-options ml-[28px] p-[6px] text-[#6E7191]'}>{val}</span>))}
+                    </div>
+
+                  </div>
+                </div>
+                <table className="w-full text-left traits-table">
+                  <thead className=" uppercase bg-[#262338] h-[56px] header-table-traits">
+                    <tr>
+                      <th scope="col" className="px-6 py-3">
+                        TRAIT NAME
+                      </th>
+                      <th scope="col" className="px-6 py-3">
+                        <div className="flex items-center">
+                          <span className="hover:border-b-2 border-blue-600 cursor-pointer">
+                            %
+                          </span>
+                          <span className="flex flex-col ml-2 items-center">
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-1">
+                              <path d="M3.65995 0.811707L7.31991 5.94346H0L3.65995 0.811707Z" fill="#6E7191" />
+                            </svg>
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.66005 5.18829L0.000102015 0.0565327L7.32001 0.0565333L3.66005 5.18829Z" fill="#6E7191" />
+                            </svg>
+
+                          </span>
+                        </div>
+                      </th>
+                      <th scope="col" className="px-6 py-3">
+                        <div className="flex items-center">
+                          <span className="hover:border-b-2 border-blue-600 cursor-pointer">
+                            AVG LAST SALES
+                          </span>
+                          <span className="flex flex-col ml-2 items-center">
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-1">
+                              <path d="M3.65995 0.811707L7.31991 5.94346H0L3.65995 0.811707Z" fill="#6E7191" />
+                            </svg>
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.66005 5.18829L0.000102015 0.0565327L7.32001 0.0565333L3.66005 5.18829Z" fill="#6E7191" />
+                            </svg>
+
+                          </span>
+                        </div>
+                      </th>
+                      <th scope="col" className="px-6 py-3">
+                        <div className="flex items-center">
+                          <span className="hover:border-b-2 border-blue-600 cursor-pointer">
+                            FLOOR PRICE
+                          </span>
+                          <span className="flex flex-col ml-2 items-center">
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-1">
+                              <path d="M3.65995 0.811707L7.31991 5.94346H0L3.65995 0.811707Z" fill="#6E7191" />
+                            </svg>
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.66005 5.18829L0.000102015 0.0565327L7.32001 0.0565333L3.66005 5.18829Z" fill="#6E7191" />
+                            </svg>
+
+                          </span>
+                        </div>
+                      </th>
+                      <th scope="col" className="px-6  py-3">
+                        <div className="flex items-center">
+                          <span className="hover:border-b-2 border-blue-600 cursor-pointer">
+                            DIFF
+                          </span>
+                          <span className="flex flex-col ml-2 items-center">
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="mb-1">
+                              <path d="M3.65995 0.811707L7.31991 5.94346H0L3.65995 0.811707Z" fill="#6E7191" />
+                            </svg>
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3.66005 5.18829L0.000102015 0.0565327L7.32001 0.0565333L3.66005 5.18829Z" fill="#6E7191" />
+                            </svg>
+
+                          </span>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <div className="mt-4"></div>
+                  <tbody className="bg-[#262338] body-table-traits">
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                    <tr className="border-b border-gray-700">
+                      <th scope="row" className="px-6 py-[17px]">
+                        <span className="text-[#8775D0]">
+                          FUR
+                        </span>
+                        : CROSS
+                      </th>
+                      <td className="px-6 py-[17px]">
+                        1,49%
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        192.4
+                      </td>
+                      <td className="px-6 py-[17px]">
+                        $169.69
+                      </td>
+                      <td className="px-6 py-[17px] text-left">
+                        11,66%
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div className="border">
-                duas
+
+              <div className="w-5/12 flex flex-col ml-12">
+                <div className="h-[56px] ml-12 bg-[#262338] flex items-center">
+                  <span className="ml-4">
+                    Time:
+                  </span>
+                  <div className="mr-4">
+                    {traits_time.map(val => (<span key={val} onClick={() => { setTraitTime(val) }} className={traitTime === val ? 'filter-trade-options ml-[28px] p-[6px] bg-[#4E4B66] cursor-pointer' : 'cursor-pointer filter-trade-options ml-[28px] p-[6px] text-[#6E7191]'}>{val}</span>))}
+                  </div>
+
+                </div>
+                <div className="flex w-full flex-col items-center justify-start bg-[#262338] h-[56px]">
+                  <div className="w-full flex justify-between items-center h-[56px]">
+                    <span className="ml-[24px] trend">
+                      Hype Trend
+                    </span>
+
+                  </div>
+
+                </div>
+                <div className="flex w-full flex-col items-center justify-start bg-[#262338] mt-[20px] h-[60px]">
+                  <div className="w-full flex justify-between items-center h-[56px]">
+                    <span className="ml-[24px] trend">
+                      Hype Trend
+                    </span>
+                    <div className="flex items-center">
+                      <span className="hyper">
+                        HYPE THERMOMETER
+                      </span>
+                      <div className="flex items-center p-2 mr-[24px] ml-[12px]  verify-hyped">
+                        <span className="m-[10px]">
+                          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.25 1.5L10.125 8.625L6.375 4.875L0.75 10.5" stroke="#4DBC19" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                          </svg>
+
+                        </span>
+                        <p className="text-[#4DBC19] mt-[6] mb-[6]">
+                          VERY HYPED
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div className="mt-[24px]  bg-[#262338] h-[325px]">
+
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-col">
+              <div className="mt-[24px] flex w-full h-[60px] bg-[#262338]">
+                <div className="flex h-[56px] items-center justify-between w-full">
+                  <div className="ml-[24px]">
+                    Floor Price and Average Price
+                  </div>
+                  <div className="mr-[30px]">
+                    Time:
+                    {floor_price.map(val => (<span key={val} onClick={() => { setFloor(val) }} className={floor === val ? 'filter-trade-options ml-8 px-[20px] py-[12px] bg-[#4E4B66] cursor-pointer' : 'cursor-pointer filter-trade-options ml-8 p-[6px] text-[#6E7191]'}>{val}</span>))}
+                  </div>
+                </div>
+              </div>
+              <div className="flex bg-[#262338] w-full mb-20 mt-[24px]">
+                <div className="h-[404px] flex w-full">
+                  <div className="w-8/12 border-r border-gray-600">
+                    dale
+                  </div>
+                  <div>
+                    dele
+                  </div>
+                </div>
               </div>
             </div>
           </div>
