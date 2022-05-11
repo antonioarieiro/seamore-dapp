@@ -1,0 +1,288 @@
+.details {
+  .header-table {
+    th {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 24px;
+      color: #6E7191;
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+ 
+    }
+  }
+
+  .body-table {
+    th {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+
+      color: #F7F7FC;
+      order: 1;
+      flex-grow: 0;
+  
+    }
+  }
+
+  p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F7F7FC;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .vol-24 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #4DBC19;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+  }
+
+  .vol-7 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #4DBC19;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+  }
+}
+
+.traits {
+  width: 146px;
+  height: 48px;
+background: #4E4B66;
+border-radius: 2px;
+p {
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+color: #F7F7FC;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+}
+
+.chart {
+  background: #262338;
+  border-radius: 2px;
+  height: 96px;
+  .header-chart  {
+    span {
+      font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #A0A3BD;
+
+    }
+    
+    
+  }
+  
+}
+.time {
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+
+color: #4E4B66;
+.filter-trade-options {
+  
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 24px;
+}
+}
+.listing {
+  >p {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+color: #F7F7FC;
+  }
+  
+border-radius: 2px;
+
+.order-filters  {
+  
+  span {
+    >p{
+ 
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 24px;
+
+color: #F7F7FC;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+    }
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+
+color: #4E4B66;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+  
+}
+}
+
+
+
+.info-details-rank {
+  p {
+    font-weight: 700;
+font-size: 15px;
+line-height: 24px;
+color: #F7F7FC;
+
+  }
+  span {
+    font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+
+color: #6E7191;
+
+  }
+
+  .buy-btn {
+    width: 63px;
+    height: 48px;
+background: linear-gradient(89.64deg, rgba(190, 32, 155, 0.6) -106.67%, rgba(130, 31, 147, 0.6) 277.46%);
+border-radius: 2px;
+  }
+}
+
+.traits-table {
+  .header-table-traits {
+   th {
+     font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+/* identical to box height, or 185% */
+
+
+/* Grayscale/200 */
+
+color: #F7F7FC;
+
+   } 
+  }
+
+  .body-table-traits {
+
+    height: 297px;
+
+/* Grayscale/Ash */
+
+background: #262338;
+border-radius: 2px;
+    th {
+
+    }
+    td {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+      /* identical to box height, or 160% */
+      
+      
+      /* Grayscale/200 */
+      
+      color: #F7F7FC;
+      
+    }
+  }
+}
+
+
+.trend {
+  font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+color: #F7F7FC;
+}
+
+.hyper {
+  
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+
+color: #A0A3BD;
+
+  
+}
+
+.verify-hyped {
+  width: 131px;
+  height: 30px;
+background: rgba(77, 188, 25, 0.1);
+border-radius: 2px;
+ p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+
+  color: #4DBC19;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 9px;
+ }
+}

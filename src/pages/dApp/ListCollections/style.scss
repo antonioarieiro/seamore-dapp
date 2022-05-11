@@ -1,0 +1,320 @@
+body {
+  position: static;
+}
+
+.nft-list-navbar {
+  background: #262338;
+
+  .options {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    color: #6E7191;
+  }
+
+  .seamore {
+    width: 89px;
+    height: 40px;
+    padding: 8px 12px;
+    background: #EFF0F6;
+    border-radius: 2px 0px 0px 2px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #4E4B66;
+  }
+
+  .traits {
+    width: 114px;
+    height: 40px;
+    padding: 8px 12px;
+    background: #4E4B66;
+    border-radius: 0px 2px 2px 0px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: #A0A3BD;
+  }
+
+  .vertical-line {
+    border: solid 1px;
+    height: 70px;
+  }
+
+  .gas-information {
+
+    p {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #F7F7FC;
+    }
+
+    span {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: #6E7191;
+
+    }
+
+  }
+
+  .explore {
+    p {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+
+      color: #F7F7FC;
+    }
+  }
+
+  .account {
+    background: #14142B;
+    border-radius: 2px;
+  }
+
+  .connect-wallet {
+    background: #4E4B66;
+    border-radius: 2px;
+    height: 56px;
+
+    p {
+
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #F7F7FC;
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 12px;
+
+    }
+  }
+
+}
+
+.infos {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FCFCFC;
+
+  #collections {
+    background: -webkit-linear-gradient(#B5175A -25.1%, #7221A4 110.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #A0A3BD;
+  }
+
+  .search-bar {
+    height: 56px;
+    background: #4E4B66;
+    border: 1px solid #4E4B66;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 384px;
+
+    input {
+      border: none;
+      background: transparent;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #6E7191;
+
+    }
+
+  }
+
+}
+
+.nft-table-header {
+  background: #262338;
+  border-radius: 2px;
+
+  .head-items {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    color: #F7F7FC;
+  }
+
+  svg {
+    cursor: pointer;
+
+    &:hover {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .collections {
+    border-collapse: collapse;
+  }
+
+  table {
+    border-radius: 2px;
+
+    th {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 24px;
+      display: flex;
+      text-align: center;
+
+      color: #F7F7FC;
+    }
+  }
+}
+
+.nft-table-body {
+  background: #262338;
+  border-radius: 2px;
+
+  th,
+  td {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+
+
+
+    /* Grayscale/200 */
+
+    color: #F7F7FC;
+  }
+
+  .down {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #D03025;
+
+  }
+}
+
+.filter-time {
+  .filter-selected {
+    background: linear-gradient(90deg, #A71A6B -56.82%, #7B209B 100%);
+    border-radius: 2px;
+    text-align: center;
+    padding: 2px;
+  }
+}
+
+.min-w-1920 {
+  background: #262338;
+  min-width: 1200px !important;
+  display: inline;
+  zoom: 1;
+}
+
+.main {
+  opacity: 98%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(4px);
+}
+
+.selected-nft {
+  height: 120px;
+  background: #262338;
+  border-radius: 2px;
+  .name-and-owner {
+    p {
+
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #F7F7FC;
+    }
+
+    span {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #6E7191;
+    }
+  }
+
+
+  .metrics {
+   p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+
+    color: #6E7191;
+
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+   } 
+   span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F7F7FC;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+   }
+  }
+}
