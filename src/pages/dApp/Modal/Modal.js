@@ -1,24 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../../assets/logo.png';
 import MetaMask from '../../../assets/metamask.png';
+import { useWeb3React } from "@web3-react/core";
 import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
-import { useMetaMask } from "metamask-react";
 import Icon from '@material-tailwind/react/Icon';
 import './style.scss';
 
-export default function Home() {
-  const { connect } = useMetaMask();
-  const { openModal, setOpenModal } = React.useContext(SeamoreContext);
+ export default function Home() {
+  const { openModal, setOpenModal, connect, injected } = React.useContext(SeamoreContext);
+  const { active, account, library, connector, activate, deactivate } = useWeb3React();
+  useEffect(() => {
+    const connectWalletOnPageLoad = async () => {
+      if (localStorage?.getItem('isWalletConnected') === 'true') {
+        try {
+          await activate(injected)
+          localStorage.setItem('isWalletConnected', true)
+        } catch (ex) {
+          console.log(ex)
+        }
+      }
+    }
+    connectWalletOnPageLoad()
+  }, [])
+
+
+console.log('asa',account)
   return (
     <>
-        <div
-        className={openModal ? "absolute flex flex-row w-4/5 h-4/5 justify-center z-50 md:ml-32 md:mt-16 modal" : 'hidden'}
-        >
-          <p
-          onClick={() => {setOpenModal(!openModal)}}
+      <div
+        className={openModal && !account ? "absolute flex flex-row w-4/5 h-4/5 justify-center z-50 md:ml-32 md:mt-16 modal" : 'hidden'}
+      >
+        <p
+          onClick={() => { setOpenModal(!openModal) }}
           className="absolute text-white w-full items-end justify-end flex mr-16 mt-5 cursor-pointer exit">
           <Icon name='close' size='4xl' color='white' />
-          </p>
+        </p>
         <div className="right w-1/2 flex flex-col items-center h-full  justify-end">
 
           <div className="message text-center flex items-center">
@@ -42,7 +58,7 @@ export default function Home() {
           <div className="flex w-full mt-10">
             <div className="meta-mask-content cursor-pointer w-full ml-20 mr-20 items-center flex align-baseline justify-center hover:border-2 border-blue-500">
               <img src={MetaMask} alt="" className="w-[24px] h-[24px] mr-4" />
-              <p onClick={() => connect}>Connect Metamask Wallet</p>
+              <p onClick={connect}>Connect Metamask Wallet</p>
             </div>
           </div>
           <div className="mt-10 flex flex-col">
@@ -76,7 +92,7 @@ export default function Home() {
         </div>
       </div>
 
- 
+
     </>
   )
 }

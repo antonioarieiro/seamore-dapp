@@ -1,10 +1,10 @@
 
-import Home from './Home/Home';
-import NftList from './NftList/NftList';
+import Modal from './Modal/Modal';
+import NftList from './ListCollections/CollectionList';
 import CollectionDetails from './CollectionDetails/CollectionDetails';
 
 export const dApp = {
-  Home,
+  Modal,
   NftList,
   CollectionDetails,
 }
