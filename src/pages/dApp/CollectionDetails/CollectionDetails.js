@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import SelectedNftInfo from './SelectedNftInfo';
 import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 import BreakMaxSize from './BreakProint1920';
@@ -70,9 +71,11 @@ export default function CollectionDetails() {
 
                 </span>
 
-                <span className={content === 'itens' ? '' : 'hover:border-b-2 border-blue-500 text-[#4E4B66]'}>
-                  Collection Itens
-                </span>
+                <Link to="/collection/items">
+                  <span className={content === 'itens' ? '' : 'hover:border-b-2 border-blue-500 text-[#4E4B66]'}>
+                    Collection Itens
+                  </span>
+                </Link>
               </p>
             </div>
             <div

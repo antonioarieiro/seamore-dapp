@@ -23,6 +23,7 @@ function Main() {
         <Routes>
           <Route exact path="/" element={<dApp.NftList />} />
           <Route exact path="/collection/:id" element={<dApp.CollectionDetails />} />
+          <Route exact path="/collection/items" element={<dApp.CollectionItemsDatails />}/>
         </Routes>
 
       </div>
