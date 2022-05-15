@@ -1,0 +1,127 @@
+.header {
+  background: linear-gradient(90deg, #B5175A -25.1%, #7221A4 110.69%);
+
+  p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #EFF0F6;
+  }
+}
+
+.traits-text {
+
+  .title {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 24px;
+color: #FCFCFC;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 8px 0px;
+  }
+  span {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+
+
+color: #A0A3BD;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+  }
+}
+
+.selected-filters {
+  p {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+
+color: #F7F7FC;
+
+flex: none;
+order: 1;
+flex-grow: 0;
+  }
+  span {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 24px;
+color: #6E7191;
+
+  }
+}
+
+.searchStyle {
+  input {
+
+border: none;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #4E4B66;
+flex: none;
+order: 1;
+flex-grow: 0;
+  }
+}
+
+.traits-filter {
+  input[type='checkbox']:checked {
+    background:red;
+  }
+  >p {
+
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 24px;
+color: #A0A3BD;
+
+  }
+}
+
+.atention {
+  p {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+color: #A0A3BD;
+  }
+
+  h4 {
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+/* Grayscale/200 */
+
+color: #F7F7FC;
+  }
+}

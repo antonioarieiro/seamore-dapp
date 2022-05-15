@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  opacity: 98%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(4px);
+}
+
+.min-w-1920 {
+  background: #14142B;
+  min-width: 1200px !important;
+  display: inline;
+  zoom: 1;
+}

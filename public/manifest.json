@@ -1,0 +1,10 @@
+{
+  "name": "TODO - Tulio Calil",
+  "description": "Aplicação de TODO com React",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "TODO App"
+  }
+}

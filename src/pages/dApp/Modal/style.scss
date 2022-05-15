@@ -1,0 +1,75 @@
+.modal {
+  border:solid 0.1px transparent;
+  border-radius: 4px;
+}
+
+.right {
+  background: conic-gradient(from 112.52deg at 50% 50%, #6D23A7 0deg, #901EA3 98.05deg, #9F2082 253.66deg, #C4215C 360deg);
+
+  .message {
+    height: 96px;
+    left: 23px;
+    top: 511px;
+    background: linear-gradient(112.48deg, rgba(255, 255, 255, 0.4) -0.18%, rgba(255, 255, 255, 0.1) 80.3%);
+ 
+    box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 2px;
+    margin-bottom: 24px;
+
+    p {
+      margin: 46px;
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #EFF0F6;
+    }
+  }
+}
+
+.account {
+  left: 0px;
+  top: 44px;
+  background: #14142B;
+
+  .default-dapp {
+    p {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FCFCFC;
+    }
+
+    span {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      color: #A0A3BD;
+    }
+  }
+
+  .meta-mask-content {
+    background: #262338;
+    border-radius: 2px;
+    height: 72px;
+
+    p {
+      font-family: 'Manrope';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #F7F7FC;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      margin: 0px 24px;
+    }
+  }
+}
