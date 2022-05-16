@@ -1,0 +1,14 @@
+.table-container {
+    background-color: #262338;
+    width: 400px;
+    color: #fff;
+    
+    .box-table {
+        display: flex;
+    } 
+    
+    tr {
+        border-bottom: 1px solid #4E4B66;
+        padding: 10px;
+    }
+}

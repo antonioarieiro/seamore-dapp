@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SelectedNftInfo from './SelectedNftInfo';
 import { SeamoreContext } from '../../../SeamoreContext/SeamoreContext';
 import BreakMaxSize from './BreakProint1920';
 import SmallSize from './SmallSize';
 import 'chartkick/chart.js'
 import './style.scss';
+import CollectionItemsHeader from '../../../Components/CollectionItems/Header/HeaderCollectionItem';
+import Card from '../../../Components/Card/Card';
+import CardsItems from '../../../Components/CollectionItems';
+import CardTest from '../../../Components/Card/CardTest';
 
 
 function getWindowDimensions() {
@@ -23,6 +27,20 @@ export default function CollectionDetails() {
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
+  const testB = [
+    {
+      name: "Botão 1",
+      type: "button",
+    },
+    {
+      name: "Botão 2",
+      type: "submit",
+    },
+    {
+      name: "Botão 3",
+      type: "button",
+    }
+  ]
 
 
   useEffect(() => {
@@ -34,14 +52,14 @@ export default function CollectionDetails() {
 
 
 
-  },[windowDimensions, setWindowDimensions, getWindowDimensions])
+  }, [windowDimensions, setWindowDimensions, getWindowDimensions])
 
   return (
     <>
- 
+
       <div className="absolute w-full">
         <SelectedNftInfo />
-        
+
         <div className="mt-[96px] w-full flex flex-col">
           <div className="ml-10 flex w-full text-white items-center justify-between">
             <div className="flex">
@@ -71,17 +89,23 @@ export default function CollectionDetails() {
 
                 </span>
 
-                <Link to="/collection/items">
-                  <span className={content === 'itens' ? '' : 'hover:border-b-2 border-blue-500 text-[#4E4B66]'}>
-                    Collection Itens
-                  </span>
-                </Link>
+                <span className={content === 'itens' ? '' : 'hover:border-b-2 border-blue-500 text-[#4E4B66]'}>
+                  Collection Itens
+                </span>
               </p>
             </div>
+            {
+              content !== 'overview'
+              ? <div>
+                Teste
+              </div>
+              : ''
+            }
             <div
-            className="traits flex items-center justify-center mr-[78px] cursor-pointer hover:border-2 border-blue-500"
-            onClick={() => {setOpenTraits(!openTraits)}}
+              className="traits flex items-center justify-center mr-[78px] cursor-pointer hover:border-2 border-blue-500"
+              onClick={() => { setOpenTraits(!openTraits) }}
             >
+              
               <span className="mr-[16px]">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.250056 1.61C2.27006 4.2 6.00006 9 6.00006 9V15C6.00006 15.55 6.45006 16 7.00006 16H9.00006C9.55006 16 10.0001 15.55 10.0001 15V9C10.0001 9 13.7201 4.2 15.7401 1.61C15.8547 1.46237 15.9255 1.28553 15.9445 1.09961C15.9636 0.913684 15.93 0.726154 15.8477 0.558371C15.7654 0.390588 15.6376 0.249293 15.4789 0.150577C15.3202 0.0518598 15.137 -0.000312035 14.9501 1.40404e-06H1.04006C0.210056 1.40404e-06 -0.259944 0.950002 0.250056 1.61Z" fill="#F7F7FC" />
@@ -99,17 +123,33 @@ export default function CollectionDetails() {
         </div>
         <div>
 
-          <div className="mr-10 ml-9 mt-[30px] mb-[32px] flex w-full text-white items-center">
-            No trait filters added
-          </div>
           {
-            windowDimensions.width > 1910
-            ? <BreakMaxSize/>
-            : <SmallSize/>
+            content === 'overview' ?
+            <div className="mr-10 ml-9 mt-[30px] mb-[32px] flex w-full text-white items-center">
+              No trait filters added
+            </div>
+            : <CollectionItemsHeader />
+          }
+          {
+            content === 'overview' ?
+            <div>
+              {
+                windowDimensions.width > 1910
+                  ? <BreakMaxSize />
+                  : <SmallSize />
+              }
+            </div>
+            : <div>
+              {
+                testB.map((teste) => (
+                  <CardTest type={teste.type} name={teste.name} />
+                ))
+              }
+            </div>
           }
 
         </div>
-      
+
       </div>
     </>
   )

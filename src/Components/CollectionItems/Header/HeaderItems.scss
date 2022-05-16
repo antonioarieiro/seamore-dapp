@@ -1,0 +1,19 @@
+.collection-items-header {
+    width: 95%;
+    margin: auto;
+}
+
+.search-container {
+    background-color: #4E4B66;
+    border: none;
+    
+    #search {
+        background-color: #4E4B66;
+        border: none;
+        outline: none;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+}
